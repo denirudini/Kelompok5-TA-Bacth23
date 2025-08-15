@@ -1,78 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-14T01:12:18 WIB" name="Test Tokonek" finished-at="2025-08-14T01:12:42 WIB" duration-ms="24176">
+  <suite started-at="2025-08-15T08:54:43 WIB" name="Test dikahadir" finished-at="2025-08-15T08:54:59 WIB" duration-ms="16128">
     <groups>
     </groups>
-    <test started-at="2025-08-14T01:12:18 WIB" name="Automation Test" finished-at="2025-08-14T01:12:42 WIB" duration-ms="24176">
-      <class name="com.dikahadir.management.usertest.ExportUserTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dikahadir.management.usertest.ExportUserTest@53d102a2]" started-at="2025-08-14T01:12:18 WIB" name="setUp" finished-at="2025-08-14T01:12:22 WIB" duration-ms="3975" status="PASS">
+    <test started-at="2025-08-15T08:54:43 WIB" name="status user" finished-at="2025-08-15T08:54:59 WIB" duration-ms="16128">
+      <class name="com.dikahadir.management.pendaftaranusertest.RegistrasiUserTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dikahadir.management.pendaftaranusertest.RegistrasiUserTest@53d102a2]" started-at="2025-08-15T08:54:43 WIB" name="setUp" finished-at="2025-08-15T08:54:47 WIB" duration-ms="3944" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="exportUserTest()[pri:1, instance:com.dikahadir.management.usertest.ExportUserTest@53d102a2]" started-at="2025-08-14T01:12:22 WIB" name="exportUserTest" finished-at="2025-08-14T01:12:40 WIB" duration-ms="17676" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Gagal mengunduh file: Expected condition failed: waiting for com.dikahadir.management.usertest.ExportUserTest$$Lambda$662/0x000002d181276900@4cc61eb1 (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\denir\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64082/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5d6be1f5a3f6aea1889bc00fe3098f23]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Gagal mengunduh file: Expected condition failed: waiting for com.dikahadir.management.usertest.ExportUserTest$$Lambda$662/0x000002d181276900@4cc61eb1 (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\denir\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64082/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5d6be1f5a3f6aea1889bc00fe3098f23
-at org.testng.Assert.fail(Assert.java:111)
-at com.dikahadir.management.usertest.ExportUserTest.exportUserTest(ExportUserTest.java:44)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="registrasiUser()[pri:0, instance:com.dikahadir.management.pendaftaranusertest.RegistrasiUserTest@53d102a2]" started-at="2025-08-15T08:54:47 WIB" name="registrasiUser" finished-at="2025-08-15T08:54:57 WIB" duration-ms="9741" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- exportUserTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dikahadir.management.usertest.ExportUserTest@53d102a2]" started-at="2025-08-14T01:12:40 WIB" name="tearDown" finished-at="2025-08-14T01:12:42 WIB" duration-ms="2253" status="PASS">
+        </test-method> <!-- registrasiUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dikahadir.management.pendaftaranusertest.RegistrasiUserTest@53d102a2]" started-at="2025-08-15T08:54:57 WIB" name="tearDown" finished-at="2025-08-15T08:54:59 WIB" duration-ms="2280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.dikahadir.management.usertest.ExportUserTest -->
-    </test> <!-- Automation Test -->
-  </suite> <!-- Test Tokonek -->
+      </class> <!-- com.dikahadir.management.pendaftaranusertest.RegistrasiUserTest -->
+    </test> <!-- status user -->
+  </suite> <!-- Test dikahadir -->
 </testng-results>

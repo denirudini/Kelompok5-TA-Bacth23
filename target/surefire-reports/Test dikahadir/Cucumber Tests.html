@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>TestNG:  Cucumber Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Cucumber Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 14 13:17:49 WIB 2025</td>
+</tr>
+<tr><td>Total time:</td><td>71 seconds (71448 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.dikahadir.management.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.dikahadir.management.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search User by NIK", "User Search Functionality"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //body/div[@id=&apos;__next&apos;]/div[@class=&apos;css-10f63sf&apos;]/div[@class=&apos;MuiBox-root css-k008qs&apos;]/div[@class=&apos;MuiDrawer-root MuiDrawer-docked css-1tu59u4&apos;]/div[@class=&apos;MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1yw4omu&apos;]/div[@data-simplebar=&apos;init&apos;]/div[@class=&apos;simplebar-wrapper&apos;]/div[@class=&apos;simplebar-mask&apos;]/div[@class=&apos;simplebar-offset&apos;]/div[@aria-label=&apos;scrollable content&apos;]/div[@class=&apos;simplebar-content&apos;]/div[@class=&apos;MuiBox-root css-10klw3m&apos;]/div[@class=&apos;sidebar MuiBox-root css-ftf74w&apos;]/div[@class=&apos;MuiBox-root css-old1by&apos;]/div[4]/div[1]/div[1]//*[name()=&apos;svg&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\denir\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63451/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d40053c6d79d89f77451bd91b7270de1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.dikahadir.management.stepdefinitions.CommonSteps.user_navigates_to_the_user_menu(CommonSteps.java:41)
+	at ?.User navigates to the user menu(file:///E:/Practice%20Selenium/Tugas%20TA/com.dikahadir.management/src/test/resources/features/UserSearch.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace365751148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace365751148'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //body/div[@id=&apos;__next&apos;]/div[@class=&apos;css-10f63sf&apos;]/div[@class=&apos;MuiBox-root css-k008qs&apos;]/div[@class=&apos;MuiDrawer-root MuiDrawer-docked css-1tu59u4&apos;]/div[@class=&apos;MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1yw4omu&apos;]/div[@data-simplebar=&apos;init&apos;]/div[@class=&apos;simplebar-wrapper&apos;]/div[@class=&apos;simplebar-mask&apos;]/div[@class=&apos;simplebar-offset&apos;]/div[@aria-label=&apos;scrollable content&apos;]/div[@class=&apos;simplebar-content&apos;]/div[@class=&apos;MuiBox-root css-10klw3m&apos;]/div[@class=&apos;sidebar MuiBox-root css-ftf74w&apos;]/div[@class=&apos;MuiBox-root css-old1by&apos;]/div[4]/div[1]/div[1]//*[name()=&apos;svg&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\denir\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63451/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d40053c6d79d89f77451bd91b7270de1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.dikahadir.management.stepdefinitions.CommonSteps.user_navigates_to_the_user_menu(CommonSteps.java:41)
+	at ?.User navigates to the user menu(file:///E:/Practice%20Selenium/Tugas%20TA/com.dikahadir.management/src/test/resources/features/UserSearch.feature:12)
+</pre></div></td>
+<td>17</td>
+<td>com.dikahadir.management.runners.CucumberRunner@51399530</td></tr>
+<tr>
+<td title='com.dikahadir.management.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.dikahadir.management.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Export User Data", "User Data Export"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //body/div[@id=&apos;__next&apos;]/div[@class=&apos;css-10f63sf&apos;]/div[@class=&apos;MuiBox-root css-k008qs&apos;]/div[@class=&apos;MuiDrawer-root MuiDrawer-docked css-1tu59u4&apos;]/div[@class=&apos;MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1yw4omu&apos;]/div[@data-simplebar=&apos;init&apos;]/div[@class=&apos;simplebar-wrapper&apos;]/div[@class=&apos;simplebar-mask&apos;]/div[@class=&apos;simplebar-offset&apos;]/div[@aria-label=&apos;scrollable content&apos;]/div[@class=&apos;simplebar-content&apos;]/div[@class=&apos;MuiBox-root css-10klw3m&apos;]/div[@class=&apos;sidebar MuiBox-root css-ftf74w&apos;]/div[@class=&apos;MuiBox-root css-old1by&apos;]/div[4]/div[1]/div[1]//*[name()=&apos;svg&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\denir\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63451/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d40053c6d79d89f77451bd91b7270de1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.dikahadir.management.stepdefinitions.CommonSteps.user_navigates_to_the_user_menu(CommonSteps.java:41)
+	at ?.User navigates to the user menu(file:///E:/Practice%20Selenium/Tugas%20TA/com.dikahadir.management/src/test/resources/features/UserExport.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1258882392", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1258882392'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //body/div[@id=&apos;__next&apos;]/div[@class=&apos;css-10f63sf&apos;]/div[@class=&apos;MuiBox-root css-k008qs&apos;]/div[@class=&apos;MuiDrawer-root MuiDrawer-docked css-1tu59u4&apos;]/div[@class=&apos;MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1yw4omu&apos;]/div[@data-simplebar=&apos;init&apos;]/div[@class=&apos;simplebar-wrapper&apos;]/div[@class=&apos;simplebar-mask&apos;]/div[@class=&apos;simplebar-offset&apos;]/div[@aria-label=&apos;scrollable content&apos;]/div[@class=&apos;simplebar-content&apos;]/div[@class=&apos;MuiBox-root css-10klw3m&apos;]/div[@class=&apos;sidebar MuiBox-root css-ftf74w&apos;]/div[@class=&apos;MuiBox-root css-old1by&apos;]/div[4]/div[1]/div[1]//*[name()=&apos;svg&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\denir\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63451/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d40053c6d79d89f77451bd91b7270de1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.dikahadir.management.stepdefinitions.CommonSteps.user_navigates_to_the_user_menu(CommonSteps.java:41)
+	at ?.User navigates to the user menu(file:///E:/Practice%20Selenium/Tugas%20TA/com.dikahadir.management/src/test/resources/features/UserExport.feature:5)
+</pre></div></td>
+<td>18</td>
+<td>com.dikahadir.management.runners.CucumberRunner@51399530</td></tr>
+<tr>
+<td title='com.dikahadir.management.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.dikahadir.management.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search User by Name", "User Search Functionality"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //body/div[@id=&apos;__next&apos;]/div[@class=&apos;css-10f63sf&apos;]/div[@class=&apos;MuiBox-root css-k008qs&apos;]/div[@class=&apos;MuiDrawer-root MuiDrawer-docked css-1tu59u4&apos;]/div[@class=&apos;MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1yw4omu&apos;]/div[@data-simplebar=&apos;init&apos;]/div[@class=&apos;simplebar-wrapper&apos;]/div[@class=&apos;simplebar-mask&apos;]/div[@class=&apos;simplebar-offset&apos;]/div[@aria-label=&apos;scrollable content&apos;]/div[@class=&apos;simplebar-content&apos;]/div[@class=&apos;MuiBox-root css-10klw3m&apos;]/div[@class=&apos;sidebar MuiBox-root css-ftf74w&apos;]/div[@class=&apos;MuiBox-root css-old1by&apos;]/div[4]/div[1]/div[1]//*[name()=&apos;svg&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\denir\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63451/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d40053c6d79d89f77451bd91b7270de1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.dikahadir.management.stepdefinitions.CommonSteps.user_navigates_to_the_user_menu(CommonSteps.java:41)
+	at ?.User navigates to the user menu(file:///E:/Practice%20Selenium/Tugas%20TA/com.dikahadir.management/src/test/resources/features/UserSearch.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1475883187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1475883187'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //body/div[@id=&apos;__next&apos;]/div[@class=&apos;css-10f63sf&apos;]/div[@class=&apos;MuiBox-root css-k008qs&apos;]/div[@class=&apos;MuiDrawer-root MuiDrawer-docked css-1tu59u4&apos;]/div[@class=&apos;MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1yw4omu&apos;]/div[@data-simplebar=&apos;init&apos;]/div[@class=&apos;simplebar-wrapper&apos;]/div[@class=&apos;simplebar-mask&apos;]/div[@class=&apos;simplebar-offset&apos;]/div[@aria-label=&apos;scrollable content&apos;]/div[@class=&apos;simplebar-content&apos;]/div[@class=&apos;MuiBox-root css-10klw3m&apos;]/div[@class=&apos;sidebar MuiBox-root css-ftf74w&apos;]/div[@class=&apos;MuiBox-root css-old1by&apos;]/div[4]/div[1]/div[1]//*[name()=&apos;svg&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\denir\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63451/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d40053c6d79d89f77451bd91b7270de1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.dikahadir.management.stepdefinitions.CommonSteps.user_navigates_to_the_user_menu(CommonSteps.java:41)
+	at ?.User navigates to the user menu(file:///E:/Practice%20Selenium/Tugas%20TA/com.dikahadir.management/src/test/resources/features/UserSearch.feature:5)
+</pre></div></td>
+<td>17</td>
+<td>com.dikahadir.management.runners.CucumberRunner@51399530</td></tr>
+<tr>
+<td title='com.dikahadir.management.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.dikahadir.management.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Activate User Status", "User Status Management"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //body/div[@id=&apos;__next&apos;]/div[@class=&apos;css-10f63sf&apos;]/div[@class=&apos;MuiBox-root css-k008qs&apos;]/div[@class=&apos;MuiDrawer-root MuiDrawer-docked css-1tu59u4&apos;]/div[@class=&apos;MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1yw4omu&apos;]/div[@data-simplebar=&apos;init&apos;]/div[@class=&apos;simplebar-wrapper&apos;]/div[@class=&apos;simplebar-mask&apos;]/div[@class=&apos;simplebar-offset&apos;]/div[@aria-label=&apos;scrollable content&apos;]/div[@class=&apos;simplebar-content&apos;]/div[@class=&apos;MuiBox-root css-10klw3m&apos;]/div[@class=&apos;sidebar MuiBox-root css-ftf74w&apos;]/div[@class=&apos;MuiBox-root css-old1by&apos;]/div[4]/div[1]/div[1]//*[name()=&apos;svg&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\denir\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63451/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d40053c6d79d89f77451bd91b7270de1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.dikahadir.management.stepdefinitions.CommonSteps.user_navigates_to_the_user_menu(CommonSteps.java:41)
+	at ?.User navigates to the user menu(file:///E:/Practice%20Selenium/Tugas%20TA/com.dikahadir.management/src/test/resources/features/UserStatus.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1692056069", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1692056069'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //body/div[@id=&apos;__next&apos;]/div[@class=&apos;css-10f63sf&apos;]/div[@class=&apos;MuiBox-root css-k008qs&apos;]/div[@class=&apos;MuiDrawer-root MuiDrawer-docked css-1tu59u4&apos;]/div[@class=&apos;MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1yw4omu&apos;]/div[@data-simplebar=&apos;init&apos;]/div[@class=&apos;simplebar-wrapper&apos;]/div[@class=&apos;simplebar-mask&apos;]/div[@class=&apos;simplebar-offset&apos;]/div[@aria-label=&apos;scrollable content&apos;]/div[@class=&apos;simplebar-content&apos;]/div[@class=&apos;MuiBox-root css-10klw3m&apos;]/div[@class=&apos;sidebar MuiBox-root css-ftf74w&apos;]/div[@class=&apos;MuiBox-root css-old1by&apos;]/div[4]/div[1]/div[1]//*[name()=&apos;svg&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\denir\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63451/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d40053c6d79d89f77451bd91b7270de1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.dikahadir.management.stepdefinitions.CommonSteps.user_navigates_to_the_user_menu(CommonSteps.java:41)
+	at ?.User navigates to the user menu(file:///E:/Practice%20Selenium/Tugas%20TA/com.dikahadir.management/src/test/resources/features/UserStatus.feature:5)
+</pre></div></td>
+<td>17</td>
+<td>com.dikahadir.management.runners.CucumberRunner@51399530</td></tr>
+</table><p>
+</body>
+</html>

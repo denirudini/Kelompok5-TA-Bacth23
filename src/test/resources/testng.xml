@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test Tokonek">
-<listeners>
+<suite name="Test dikahadir" parallel="tests" thread-count="2">
+    <listeners>
         <listener class-name="com.dikahadir.management.listenner.ExtentReportListener"/>
     </listeners>
-    <test name="Automation Test">
+    <test name="status user">
         <classes>
-            <class name = "com.dikahadir.management.usertest.ExportUserTest"></class>
+            <class name="com.dikahadir.management.pendaftaranusertest.RegistrasiUserTest"/>
+            
         </classes>       
     </test>
 </suite>

@@ -12,6 +12,11 @@ public class UserPage {
     private By choseSeachName = By.xpath("//div[normalize-space()='Nama']");
     private By choseSearchNik = By.xpath("//li[normalize-space()='Nik']");
     private By buttonExport = By.xpath("//button[normalize-space()='Export']");
+    private By buttonStatusNonactive = By.xpath("//tbody/tr[2]/td[5]");
+    private By buttonStatusActive = By.xpath("//tbody/tr[3]/td[5]/span[1]/span[1]/input[1]");
+    private By buttonStatusNonProject= By.xpath("//tbody/tr[2]/td[6]/span[1]/span[1]/input[1]");
+    private By buttonStatusProject = By.xpath("//tbody/tr[3]/td[6]/span[1]/span[1]/input[1]");
+    private By triangleMenu = By.xpath("//tbody/tr[2]/td[7]/div[1]/div[1]/button[1]//*[name()='svg']");
 
     public UserPage(WebDriver driver){
         this.driver = driver;
@@ -36,6 +41,21 @@ public class UserPage {
     }
     public void buttonExport(){
         driver.findElement(buttonExport).click();
+    }
+    public void buttonStatusNonActive(){
+        driver.findElement(buttonStatusNonactive).click();
+    }
+    public void buttonStatusActive(){
+        driver.findElement(buttonStatusActive).click();
+    }
+    public void buttonStatusNonProject(){
+        driver.findElement(buttonStatusNonProject).click();
+    }
+    public void buttonStatusProject(){
+        driver.findElement(buttonStatusProject).click();
+    }
+    public void triangleMenu(){
+        driver.findElement(triangleMenu).click();
     }
 
 }

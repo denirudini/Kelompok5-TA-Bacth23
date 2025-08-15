@@ -1,0 +1,5 @@
+# Created at 2025-08-15T07:44:09.055
+Boot Manifest-JAR contains absolute paths in classpath 'E:\Practice Selenium\Tugas TA\com.dikahadir.management\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

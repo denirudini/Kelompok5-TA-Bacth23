@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 14 01:12:18 WIB 2025</td>
+<td>Started on:</td><td>Thu Aug 14 13:04:18 WIB 2025</td>
 </tr>
-<tr><td>Total time:</td><td>24 seconds (24176 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10912 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,24 +76,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.dikahadir.management.usertest.ExportUserTest.exportUserTest()'><b>exportUserTest</b><br>Test class: com.dikahadir.management.usertest.ExportUserTest</td>
-<td><div><pre>java.lang.AssertionError: Gagal mengunduh file: Expected condition failed: waiting for com.dikahadir.management.usertest.ExportUserTest$$Lambda$662/0x000002d181276900@4cc61eb1 (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.16&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\denir\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64082/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5d6be1f5a3f6aea1889bc00fe3098f23
-	at com.dikahadir.management.usertest.ExportUserTest.exportUserTest(ExportUserTest.java:44)
+<td title='com.dikahadir.management.usertest.StatusUserTest.activeStatus()'><b>activeStatus</b><br>Test class: com.dikahadir.management.usertest.StatusUserTest</td>
+<td><div><pre>java.lang.AssertionError: Gagal diaktifkan expected [User diaktifkan] but found [User dinonaktifkan]
+	at com.dikahadir.management.usertest.StatusUserTest.activeStatus(StatusUserTest.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1266093632", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1266093632'><pre>java.lang.AssertionError: Gagal mengunduh file: Expected condition failed: waiting for com.dikahadir.management.usertest.ExportUserTest$$Lambda$662/0x000002d181276900@4cc61eb1 (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.16&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.67, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\denir\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64082/devtoo..., se:cdpVersion: 139.0.7258.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5d6be1f5a3f6aea1889bc00fe3098f23
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace986944742", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace986944742'><pre>java.lang.AssertionError: Gagal diaktifkan expected [User diaktifkan] but found [User dinonaktifkan]
 	at org.testng.Assert.fail(Assert.java:111)
-	at com.dikahadir.management.usertest.ExportUserTest.exportUserTest(ExportUserTest.java:44)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.dikahadir.management.usertest.StatusUserTest.activeStatus(StatusUserTest.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -127,8 +121,8 @@ Session ID: 5d6be1f5a3f6aea1889bc00fe3098f23
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>17</td>
-<td>com.dikahadir.management.usertest.ExportUserTest@53d102a2</td></tr>
+<td>4</td>
+<td>com.dikahadir.management.usertest.StatusUserTest@48d5f34e</td></tr>
 </table><p>
 </body>
 </html>
