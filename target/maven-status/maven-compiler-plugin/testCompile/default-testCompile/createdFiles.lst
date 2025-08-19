@@ -1,5 +1,7 @@
 com\dikahadir\management\BaseTest.class
+com\dikahadir\management\pendaftaranusertest\RegistrasiUserTest.class
 com\dikahadir\management\usertest\StatusUserTest.class
 com\dikahadir\management\usertest\ExportUserTest.class
+com\dikahadir\management\usertest\TriangleMenuTest.class
 com\dikahadir\management\usertest\SearchUserTest.class
 com\dikahadir\management\listenner\ExtentReportListener.class

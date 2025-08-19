@@ -1,2 +1,3 @@
+com\dikahadir\management\pages\PendaftaranUserPage.class
 com\dikahadir\management\pages\UserPage.class
 com\dikahadir\management\utils\DriverUtil.class

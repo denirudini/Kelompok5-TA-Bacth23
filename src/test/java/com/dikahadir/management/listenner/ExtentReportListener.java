@@ -60,10 +60,6 @@ public class ExtentReportListener implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         test.get().log(Status.PASS, "Test berhasil.");
-        
-        // Opsional: Tambahkan screenshot saat tes berhasil
-        // attachScreenshotToReport("Bukti Test Berhasil"); 
-        
         System.out.println("Test berhasil: " + result.getMethod().getMethodName());
     }
     
@@ -74,7 +70,8 @@ public class ExtentReportListener implements ITestListener {
         // LOGIC PENGAMBILAN SCREENSHOT
         if (driver != null) {
             String screenshotPath = getScreenshot(driver, result.getMethod().getMethodName());
-            test.get().fail("Screenshot Kegagalan").addScreenCaptureFromPath(screenshotPath);
+            // Gunakan addScreenCaptureFromPath() untuk melampirkan screenshot
+            test.get().fail("Screenshot Kegagalan").addScreenCaptureFromPath(screenshotPath, "Kegagalan pada " + result.getMethod().getMethodName());
         }
         System.out.println("Test gagal: " + result.getMethod().getMethodName());
     }
@@ -100,7 +97,7 @@ public class ExtentReportListener implements ITestListener {
     // ---
     
     private static String getScreenshot(WebDriver driver, String screenshotName) {
-        String path = null;
+        String screenshotPath = null;
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
         
@@ -110,14 +107,15 @@ public class ExtentReportListener implements ITestListener {
             screenshotsDir.mkdirs();
         }
         
-        path = screenshotsDir.getAbsolutePath() + "/" + screenshotName + "_" + timestamp + ".png";
-        File destination = new File(path);
+        File destination = new File(screenshotsDir, screenshotName + "_" + timestamp + ".png");
         try {
             FileHandler.copy(source, destination);
+            // Return path relatif agar bisa diakses di laporan HTML
+            screenshotPath = "./screenshots/" + destination.getName();
         } catch (IOException e) {
             System.err.println("Gagal mengambil screenshot: " + e.getMessage());
         }
-        return "./screenshots/" + new File(path).getName();
+        return screenshotPath;
     }
     
     // --- PENAMBAHAN FUNGSI UNTUK MELAMPIRKAN SCREENSHOT KE LAPORAN ---
