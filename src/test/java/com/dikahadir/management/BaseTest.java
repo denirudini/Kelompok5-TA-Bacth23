@@ -3,6 +3,7 @@ package com.dikahadir.management;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import com.dikahadir.management.listenner.ExtentReportListener;
@@ -26,7 +27,6 @@ public class BaseTest {
         
         driver.findElement(By.xpath("//button[normalize-space()='Masuk']")).click();
         Thread.sleep(1000);
-       
     }
 
     @AfterTest

@@ -1,8 +1,9 @@
 package com.dikahadir.management.pendaftaranusertest;
-
 import com.dikahadir.management.BaseTest;
 import com.dikahadir.management.pages.PendaftaranUserPage;
 import com.dikahadir.management.utils.DriverUtil;
+
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.awt.AWTException;
 
@@ -30,7 +31,7 @@ public class RegistrasiUserTest extends BaseTest {
         registrasiuser.formPassword("Deni!@#$");
         // Form Working Information
         Thread.sleep(1000);
-        registrasiuser.formDivisi("!@#$%");
+        registrasiuser.formDivisi("!Finance");
         Thread.sleep(1000);
         registrasiuser.formUnit("11 aaaa");
         Thread.sleep(1000);
@@ -55,5 +56,16 @@ public class RegistrasiUserTest extends BaseTest {
         registrasiuser.formSelfie("No Selfie");
         Thread.sleep(1000);
         registrasiuser.formJumlahCuti("12");
+        registrasiuser.buttonSubmit();
+        Thread.sleep(1000);
+        System.out.println("Notifikasi: Pendaftaran User Berhasil!");
+        String Actual = registrasiuser.getNotificationSuccesAdd();
+        String Expected = "Pendaftaran User Berhasil!";
+        if (Actual.equals(Expected)) {
+            System.out.println("Notifikasi: " + Actual);
+        } else {
+            System.out.println("Notifikasi: " + Actual);
+        }   
+        Assert.assertEquals(Actual, Expected, "Notifikasi tidak sesuai");
     }
 }

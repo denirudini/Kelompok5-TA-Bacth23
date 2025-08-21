@@ -37,6 +37,9 @@ public class PendaftaranUserPage {
     private By formJadwalKerja = By.xpath("//input[@id='jadwal-kerja']");
     private By formSelfie = By.xpath("//div[@id='required_selfie']");
     private By formJumlahCuti = By.xpath("//input[@id='jumlah-cuti']");
+    private By buttonSubmit = By.xpath("//button[@id='submit']");
+    private By nofitikasiNoimage = By.xpath("//div[@role='alert']");
+    private By nofitikasiSuccesAdd = By.xpath("//div[@role='alert']");
 
     public PendaftaranUserPage(WebDriver driver){
         this.driver = driver;
@@ -76,7 +79,7 @@ public class PendaftaranUserPage {
     public void formDivisi(String divisi){
         driver.findElement(formDivisi).sendKeys(divisi);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-        WebElement saranDivisi = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[text()='!@#$%']")));
+        WebElement saranDivisi = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@id='divisi-option-0']")));
         saranDivisi.click();
     }
     public void formUnit(String unit){
@@ -143,6 +146,20 @@ public class PendaftaranUserPage {
     public void formJumlahCuti(String jumlahCuti){
         driver.findElement(formJumlahCuti).clear();
         driver.findElement(formJumlahCuti).sendKeys(jumlahCuti);
+    }
+    public void buttonSubmit() {
+        driver.findElement(buttonSubmit).click();
+    }
+
+    public String getNotificationNoImage() { // notifikasi jika tidak ada gambar
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement notificationElement = wait.until(ExpectedConditions.visibilityOfElementLocated(nofitikasiNoimage));
+        return notificationElement.getText();
+    }
+    public String getNotificationSuccesAdd() { // notifikasi jika berhasil
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement notificationElement = wait.until(ExpectedConditions.visibilityOfElementLocated(nofitikasiSuccesAdd));
+        return notificationElement.getText();
     }
    
 }

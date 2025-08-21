@@ -1,4 +1,5 @@
 com\dikahadir\management\BaseTest.class
+com\dikahadir\management\usertest\EditUserTest.class
 com\dikahadir\management\pendaftaranusertest\RegistrasiUserTest.class
 com\dikahadir\management\usertest\StatusUserTest.class
 com\dikahadir\management\usertest\ExportUserTest.class

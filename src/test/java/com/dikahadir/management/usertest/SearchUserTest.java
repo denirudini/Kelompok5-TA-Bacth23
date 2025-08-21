@@ -44,9 +44,9 @@ public class SearchUserTest extends BaseTest {
         Assert.assertEquals(actual, expected, "Login failed or URL mismatch.");
         Thread.sleep(1000);
     }
-    @Test
-    public void searchByFilter() throws InterruptedException{
-        userpage = new UserPage(DriverUtil.getDriver());
-    }
+    // @Test (priority = 3)
+    // public void searchByFilter() throws InterruptedException{
+    //     userpage = new UserPage(DriverUtil.getDriver());
+    // }
    
 }

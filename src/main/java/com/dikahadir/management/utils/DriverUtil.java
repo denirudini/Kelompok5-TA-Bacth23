@@ -18,10 +18,10 @@ public class DriverUtil {
             ChromeOptions options = new ChromeOptions();
             // options.addArguments("--headless");
             Map<String, Object> prefs = new HashMap<String, Object>();
-            prefs.put("profile.default_content_setting_values.notifications", 2);
+            prefs.put("profile.default_content_setting_values.notifications", 10);
             options.setExperimentalOption("prefs", prefs);
             driver = new ChromeDriver(options);
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             driver.manage().window().maximize(); 
             prefs.put("download.default_directory", downloadDir);
             prefs.put("download.prompt_for_download", false); 

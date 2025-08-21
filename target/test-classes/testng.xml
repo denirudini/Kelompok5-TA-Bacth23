@@ -6,7 +6,7 @@
     </listeners>
     <test name="status user">
         <classes>
-            <class name="com.dikahadir.management.pendaftaranusertest.RegistrasiUserTest"/>
+            <class name="com.dikahadir.management.usertest.SearchUserTest"/>
             
         </classes>       
     </test>
