@@ -18,7 +18,7 @@ public class StatusUserTest extends BaseTest {
         Thread.sleep(1000);
         userpage.buttonStatusNonActive();
         Thread.sleep(2000);
-        String actual = driver.findElement(By.xpath("//div[@role='alert']")).getText();
+        String actual = DriverUtil.getDriver().findElement(By.xpath("//div[@role='alert']")).getText();
         String expected = "User diaktifkan";
         System.out.println("berhasil "+ actual );
         Assert.assertEquals(actual,expected, "Gagal diaktifkan");
@@ -33,7 +33,7 @@ public class StatusUserTest extends BaseTest {
         Thread.sleep(1000);
         userpage.buttonStatusActive();;
         Thread.sleep(2000);
-        String actual = driver.findElement(By.xpath("//div[@role='alert']")).getText();
+        String actual = DriverUtil.getDriver().findElement(By.xpath("//div[@role='alert']")).getText();
         String expected = "User dinonaktifkan";
         System.out.println("berhasil "+ actual );
         Assert.assertEquals(actual,expected, "Gagal dinonaktifkan");
@@ -48,7 +48,7 @@ public class StatusUserTest extends BaseTest {
         Thread.sleep(1000);
         userpage.buttonStatusNonProject();
         Thread.sleep(2000);
-        String actual = driver.findElement(By.xpath("//div[@role='alert']")).getText();
+        String actual = DriverUtil.getDriver().findElement(By.xpath("//div[@role='alert']")).getText();
         String expected = "Project diaktifkan";
         System.out.println("berhasil "+ actual );
         Assert.assertEquals(actual,expected, "Gagal diaktifkan");
@@ -63,7 +63,7 @@ public class StatusUserTest extends BaseTest {
         Thread.sleep(1000);
         userpage.buttonStatusProject();;
         Thread.sleep(2000);
-        String actual = driver.findElement(By.xpath("//div[@role='alert']")).getText();
+        String actual = DriverUtil.getDriver().findElement(By.xpath("//div[@role='alert']")).getText();
         String expected = "Project dinonaktifkan";
         System.out.println("berhasil "+ actual );
         Assert.assertEquals(actual,expected, "Gagal dinonaktifkan");

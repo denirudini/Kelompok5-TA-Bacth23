@@ -1,8 +1,10 @@
-package com.dikahadir.management.pendaftaranusertest;
+package com.dikahadir.management.pendaftaranuser;
 import com.dikahadir.management.BaseTest;
 import com.dikahadir.management.pages.PendaftaranUserPage;
+import com.dikahadir.management.pages.UserPage;
 import com.dikahadir.management.utils.DriverUtil;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.awt.AWTException;
@@ -10,9 +12,10 @@ import java.awt.AWTException;
 
 public class RegistrasiUserTest extends BaseTest {
     private PendaftaranUserPage registrasiuser;
+    private UserPage userpage;
 
     @Test(priority = 1)
-    public void AcountInformation() throws InterruptedException, AWTException {
+    public void pendaftaranUser() throws InterruptedException, AWTException {
         registrasiuser = new PendaftaranUserPage(DriverUtil.getDriver());
         Thread.sleep(1000);
         registrasiuser.buttonMenuManagement();
@@ -25,10 +28,11 @@ public class RegistrasiUserTest extends BaseTest {
             throw new RuntimeException("Error during image upload", e);
         }
         Thread.sleep(1000);
-        registrasiuser.formNik("D010317");
+        registrasiuser.formNik("D7240019");
         registrasiuser.formName("Deni Rudini");
-        registrasiuser.formEmail("denirudini99gmail.com");
+        registrasiuser.formEmail("denirudini@gmail.com");
         registrasiuser.formPassword("Deni!@#$");
+
         // Form Working Information
         Thread.sleep(1000);
         registrasiuser.formDivisi("!Finance");
@@ -58,14 +62,22 @@ public class RegistrasiUserTest extends BaseTest {
         registrasiuser.formJumlahCuti("12");
         registrasiuser.buttonSubmit();
         Thread.sleep(1000);
-        System.out.println("Notifikasi: Pendaftaran User Berhasil!");
-        String Actual = registrasiuser.getNotificationSuccesAdd();
-        String Expected = "Pendaftaran User Berhasil!";
-        if (Actual.equals(Expected)) {
-            System.out.println("Notifikasi: " + Actual);
-        } else {
-            System.out.println("Notifikasi: " + Actual);
-        }   
-        Assert.assertEquals(Actual, Expected, "Notifikasi tidak sesuai");
+
+        // Validasi Pendaftaran User dengan search NIK
+        userpage = new UserPage(DriverUtil.getDriver());
+        userpage.buttonMenuManagement();
+        Thread.sleep(1000);
+        userpage.buttonMenuUser();
+        Thread.sleep(1000);
+        userpage.choseSeachName();
+        userpage.choseSearchNik();
+        userpage.formSearch("D7240019");
+        Thread.sleep(1000);
+        userpage.buttonSearch();
+        String actual = DriverUtil.getDriver().findElement(By.xpath("//h5[normalize-space()='Deni Rudini']")).getText();
+        String expected = "Deni Rudini";
+        System.out.println("berhasil ditemukan user : " + actual);
+        Assert.assertEquals(actual, expected, "User registration Gagal atau user tidak ditemukan");
+        
     }
 }

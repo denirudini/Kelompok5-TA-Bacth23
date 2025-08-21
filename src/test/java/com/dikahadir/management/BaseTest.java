@@ -3,14 +3,12 @@ package com.dikahadir.management;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import com.dikahadir.management.listenner.ExtentReportListener;
 import com.dikahadir.management.utils.DriverUtil;
 
 public class BaseTest {
-    public WebDriver driver = DriverUtil.getDriver();
 
     @BeforeTest
     public void setUp() throws InterruptedException {

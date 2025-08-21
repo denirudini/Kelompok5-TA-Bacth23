@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-21T11:55:27 WIB" name="Test dikahadir" finished-at="2025-08-21T11:55:27 WIB" duration-ms="0">
+  <suite started-at="2025-08-22T04:13:55 WIB" name="Test dikahadir" finished-at="2025-08-22T04:14:25 WIB" duration-ms="29563">
     <groups>
     </groups>
+    <test started-at="2025-08-22T04:13:55 WIB" name="status user" finished-at="2025-08-22T04:14:25 WIB" duration-ms="29563">
+      <class name="com.dikahadir.management.usertest.StatusUserTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dikahadir.management.usertest.StatusUserTest@223191a6]" started-at="2025-08-22T04:13:55 WIB" name="setUp" finished-at="2025-08-22T04:14:03 WIB" duration-ms="7570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="activeStatusUser()[pri:1, instance:com.dikahadir.management.usertest.StatusUserTest@223191a6]" started-at="2025-08-22T04:14:03 WIB" name="activeStatusUser" finished-at="2025-08-22T04:14:09 WIB" duration-ms="6369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activeStatusUser -->
+        <test-method signature="nonactiveStatusUser()[pri:2, instance:com.dikahadir.management.usertest.StatusUserTest@223191a6]" started-at="2025-08-22T04:14:09 WIB" name="nonactiveStatusUser" finished-at="2025-08-22T04:14:14 WIB" duration-ms="4303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nonactiveStatusUser -->
+        <test-method signature="activeStatusProject()[pri:3, instance:com.dikahadir.management.usertest.StatusUserTest@223191a6]" started-at="2025-08-22T04:14:14 WIB" name="activeStatusProject" finished-at="2025-08-22T04:14:18 WIB" duration-ms="4422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activeStatusProject -->
+        <test-method signature="nonactiveStatusProject()[pri:4, instance:com.dikahadir.management.usertest.StatusUserTest@223191a6]" started-at="2025-08-22T04:14:18 WIB" name="nonactiveStatusProject" finished-at="2025-08-22T04:14:22 WIB" duration-ms="4338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nonactiveStatusProject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dikahadir.management.usertest.StatusUserTest@223191a6]" started-at="2025-08-22T04:14:22 WIB" name="tearDown" finished-at="2025-08-22T04:14:25 WIB" duration-ms="2272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.dikahadir.management.usertest.StatusUserTest -->
+    </test> <!-- status user -->
   </suite> <!-- Test dikahadir -->
 </testng-results>

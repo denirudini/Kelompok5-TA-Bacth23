@@ -111,6 +111,10 @@ public class PendaftaranUserPage {
     }
     public void formAtasanClientV3(String atasanV3){
         driver.findElement(formAtasanClientV3).sendKeys(atasanV3);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebElement saranAtasanV3 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[text()='Damora - Bank Neo Commerce']")));
+        saranAtasanV3.click();
+        
     }
     public void formTypeKontrak(String typeKontrak){
         driver.findElement(formTypeKontrak).sendKeys(typeKontrak);
@@ -122,7 +126,7 @@ public class PendaftaranUserPage {
     public void formLokasiKerja(String lokasiKerja){
         driver.findElement(formLokasiKerja).sendKeys(lokasiKerja);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-        WebElement saranLokasiKerja = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[text()='DIKA Bandung']")));
+        WebElement saranLokasiKerja = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[text()='DIKA Banjarmasin']")));
         saranLokasiKerja.click();
     }
     public void formTipeShift(String tipeShift){

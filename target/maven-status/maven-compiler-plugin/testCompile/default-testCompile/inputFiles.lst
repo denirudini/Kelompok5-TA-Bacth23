@@ -1,6 +1,6 @@
 E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\BaseTest.java
 E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\listenner\ExtentReportListener.java
-E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\pendaftaranusertest\RegistrasiUserTest.java
+E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\pendaftaranuser\RegistrasiUserTest.java
 E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\usertest\EditUserTest.java
 E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\usertest\ExportUserTest.java
 E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\usertest\SearchUserTest.java
