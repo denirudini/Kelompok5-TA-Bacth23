@@ -22,6 +22,7 @@ public class StatusUserTest extends BaseTest {
         String expected = "User diaktifkan";
         System.out.println("berhasil "+ actual );
         Assert.assertEquals(actual,expected, "Gagal diaktifkan");
+        userpage.refreshPage();
     }
 
     @Test (priority = 2)
@@ -37,6 +38,7 @@ public class StatusUserTest extends BaseTest {
         String expected = "User dinonaktifkan";
         System.out.println("berhasil "+ actual );
         Assert.assertEquals(actual,expected, "Gagal dinonaktifkan");
+        userpage.refreshPage();
     }
 
     @Test (priority = 3)
@@ -52,6 +54,7 @@ public class StatusUserTest extends BaseTest {
         String expected = "Project diaktifkan";
         System.out.println("berhasil "+ actual );
         Assert.assertEquals(actual,expected, "Gagal diaktifkan");
+        userpage.refreshPage();
     }
 
     @Test (priority = 4)
@@ -67,5 +70,6 @@ public class StatusUserTest extends BaseTest {
         String expected = "Project dinonaktifkan";
         System.out.println("berhasil "+ actual );
         Assert.assertEquals(actual,expected, "Gagal dinonaktifkan");
+        userpage.refreshPage();
     }
 }

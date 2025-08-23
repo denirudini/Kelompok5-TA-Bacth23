@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test dikahadir" parallel="tests" thread-count="2">
+<suite name="Test dikahadir" parallel="tests" thread-count="5">
     <listeners>
         <listener class-name="com.dikahadir.management.listenner.ExtentReportListener"/>
     </listeners>
     <test name="status user">
         <classes>
-            <class name="com.dikahadir.management.usertest.StatusUserTest"/>
-        </classes>       
+            <!-- <class name="com.dikahadir.management.pendaftaranuser.RegistrasiUserTest"/>
+            <class name="com.dikahadir.management.usertest.StatusUserTest"/> -->
+            <class name="com.dikahadir.management.usertest.SearchUserTest"/> 
+            <!-- <class name="com.dikahadir.management.usertest.trianglemenu.MelihatSisaCutiTest"/>
+            <class name="com.dikahadir.management.usertest.trianglemenu.EditUserTest"/> -->
+        </classes>        
     </test>
 </suite>

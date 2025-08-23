@@ -14,8 +14,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
-public class PendaftaranUserPage {
-
+public class EditUserPage {
     private WebDriver driver;
     private By buttonMenuManagement = By.xpath("//body/div[@id='__next']/div[@class='css-10f63sf']/div[@class='MuiBox-root css-k008qs']/div[@class='MuiDrawer-root MuiDrawer-docked css-1tu59u4']/div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1yw4omu']/div[@data-simplebar='init']/div[@class='simplebar-wrapper']/div[@class='simplebar-mask']/div[@class='simplebar-offset']/div[@aria-label='scrollable content']/div[@class='simplebar-content']/div[@class='MuiBox-root css-10klw3m']/div[@class='sidebar MuiBox-root css-ftf74w']/div[@class='MuiBox-root css-old1by']/div[4]/div[1]/div[1]//*[name()='svg']");
     private By buttonMenuPendaftaranUser = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-aqx7sf'][normalize-space()='Pendaftaran User']");
@@ -41,7 +40,7 @@ public class PendaftaranUserPage {
     private By nofitikasiNoimage = By.xpath("//div[@role='alert']");
     private By nofitikasiSuccesAdd = By.xpath("//div[@role='alert']");
 
-    public PendaftaranUserPage(WebDriver driver){
+    public EditUserPage(WebDriver driver){
         this.driver = driver;
     }
     public void buttonMenuManagement(){
@@ -65,14 +64,23 @@ public class PendaftaranUserPage {
         rb.keyRelease(KeyEvent.VK_ENTER);
     }
     public void formNik(String nik){
-        driver.findElement(formNik).clear();
-        driver.findElement(formNik).sendKeys(nik);
+        WebElement element = driver.findElement(formNik);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].value='';", element); 
+        js.executeScript("arguments[0].value=arguments[1];", element, nik); 
     }
+
     public void formName(String name){
-        driver.findElement(formName).sendKeys(name);
+        WebElement element = driver.findElement(formName);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].value='';", element); 
+        js.executeScript("arguments[0].value=arguments[1];", element, name); 
     }
     public void formEmail(String email){
-        driver.findElement(formEmail).sendKeys(email);
+        WebElement element = driver.findElement(formEmail);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].value='';", element); 
+        js.executeScript("arguments[0].value=arguments[1];", element, email);
     }
     public void formPassword(String password){
         driver.findElement(formPassword).sendKeys(password);
@@ -168,5 +176,3 @@ public class PendaftaranUserPage {
     }
    
 }
-
-

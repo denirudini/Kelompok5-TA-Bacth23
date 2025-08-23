@@ -1,5 +1,6 @@
 package com.dikahadir.management.pages;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -16,8 +17,27 @@ public class UserPage {
     private By buttonStatusActive = By.xpath("//tbody/tr[3]/td[5]/span[1]/span[1]/input[1]");
     private By buttonStatusNonProject= By.xpath("//tbody/tr[2]/td[6]/span[1]/span[1]/input[1]");
     private By buttonStatusProject = By.xpath("//tbody/tr[3]/td[6]/span[1]/span[1]/input[1]");
-    private By triangleMenu = By.xpath("//tbody/tr[2]/td[7]/div[1]/div[1]/button[1]//*[name()='svg']");
-    // Removed invalid refresPage field; use a method to refresh the page if needed.
+    private By triangleMenu = By.xpath("(//*[name()='svg'][@class='feather feather-more-vertical '])[3]");
+    private By triangleMenuCuti = By.xpath("(//*[name()='svg'][@class='feather feather-more-vertical '])[1]");
+    private By buttonSisaCuti = By.xpath("(//li[@role='menuitem'][normalize-space()='Lihat Sisa Cuti'])[1]");
+    private By buttonCloseCuti = By.xpath("//button[normalize-space()='Tutup']");
+    private By buttonEditUser = By.xpath("(//li[@role='menuitem'][normalize-space()='Edit'])[3]");
+    private By buttonFilter = By.xpath("(//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth css-1rfqlnu'])");
+    // filter Search
+    private By formfilterUnit = By.xpath("//div[@id='mui-component-select-job_departement_id']");
+    private By formfilterJoblevel = By.xpath("//div[@id='mui-component-select-job_level_id']");
+    private By formfilterTipeKaryawan = By.xpath("//div[@id='mui-component-select-employee_type_id']");
+    private By formfilterPosisiKerja = By.xpath("//div[@id='mui-component-select-job_position_id']");
+    private By formfilterLokasiKerja = By.xpath("//div[@id='mui-component-select-location_point_id']");
+    private By formfilterStatus = By.xpath("//div[@id='demo-select-small']");
+    private By choseJoblevel = By.xpath("//li[normalize-space()='Kepala']");
+    private By choseUnit = By.xpath("(//li[normalize-space()='Business Development'])[1]");
+    private By choseTipeKaryawan = By.xpath("//li[normalize-space()='Mitra']");
+    private By chosePosisiKerja = By.xpath("//li[normalize-space()='BNC Quality Control - Email & Customer Service Ded']");
+    private By choseLokasiKerja = By.xpath("//li[normalize-space()='Iforte - Surabaya']");
+    private By choseStatus = By.xpath("//li[normalize-space()='Aktif']");
+
+    private By buttonTerapkan = By.xpath("//button[normalize-space()='Terapkan']");
 
     public UserPage(WebDriver driver){
         this.driver = driver;
@@ -58,8 +78,61 @@ public class UserPage {
     public void triangleMenu(){
         driver.findElement(triangleMenu).click();
     }
-    
+    public void triangleMenuCuti(){
+        driver.findElement(triangleMenuCuti).click();
+    }
+    public void buttonSisaCuti() {
+        driver.findElement(buttonSisaCuti).click();
+    }
+    public void buttonCloseCuti() {
+        driver.findElement(buttonCloseCuti).click();
+    }
     public void refreshPage() {
         driver.navigate().refresh();
+    }
+    public void buttonEditUser() {
+        driver.findElement(buttonEditUser).click();
+    }
+    public void buttonFilter() {
+        driver.findElement(buttonFilter).click();
+    }
+    public void formFilterUnit() {
+        driver.findElement(formfilterUnit).click();
+    }
+    public void choseUnit() {
+        driver.findElement(choseUnit).click();
+    }
+    public void formFilterJoblevel() {
+        driver.findElement(formfilterJoblevel).click();
+    }
+    public void choseJoblevel() {
+        driver.findElement(choseJoblevel).click();
+    }
+    public void buttonTerapkan() {
+        driver.findElement(buttonTerapkan).click();
+    }
+    public void formFilterTipeKaryawan() {
+        driver.findElement(formfilterTipeKaryawan).click();
+    }
+    public void choseTipeKaryawan() {
+        driver.findElement(choseTipeKaryawan).click();
+    }
+    public void formFilterPosisiKerja() {
+        driver.findElement(formfilterPosisiKerja).click();
+    }
+    public void chosePosisiKerja() {
+        driver.findElement(chosePosisiKerja).click();
+    }
+    public void formFilterLokasiKerja() {
+        driver.findElement(formfilterLokasiKerja).click();
+    }
+    public void choseLokasiKerja() {
+        driver.findElement(choseLokasiKerja).click();
+    }
+    public void formFilterStatus() {
+        driver.findElement(formfilterStatus).click();
+    }
+    public void choseStatus() {
+        driver.findElement(choseStatus).click();
     }
 }

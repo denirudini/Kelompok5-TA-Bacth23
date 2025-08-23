@@ -1,37 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-22T04:13:55 WIB" name="Test dikahadir" finished-at="2025-08-22T04:14:25 WIB" duration-ms="29563">
+  <suite started-at="2025-08-23T19:12:25 WIB" name="Test dikahadir" finished-at="2025-08-23T19:15:03 WIB" duration-ms="157661">
     <groups>
     </groups>
-    <test started-at="2025-08-22T04:13:55 WIB" name="status user" finished-at="2025-08-22T04:14:25 WIB" duration-ms="29563">
-      <class name="com.dikahadir.management.usertest.StatusUserTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dikahadir.management.usertest.StatusUserTest@223191a6]" started-at="2025-08-22T04:13:55 WIB" name="setUp" finished-at="2025-08-22T04:14:03 WIB" duration-ms="7570" status="PASS">
+    <test started-at="2025-08-23T19:12:25 WIB" name="status user" finished-at="2025-08-23T19:15:03 WIB" duration-ms="157661">
+      <class name="com.dikahadir.management.usertest.SearchUserTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:12:26 WIB" name="setUp" finished-at="2025-08-23T19:12:30 WIB" duration-ms="4544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="activeStatusUser()[pri:1, instance:com.dikahadir.management.usertest.StatusUserTest@223191a6]" started-at="2025-08-22T04:14:03 WIB" name="activeStatusUser" finished-at="2025-08-22T04:14:09 WIB" duration-ms="6369" status="PASS">
+        <test-method signature="searchName()[pri:1, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:12:30 WIB" name="searchName" description="Test untuk mencari user dari nama (positif)" finished-at="2025-08-23T19:12:36 WIB" duration-ms="5610" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- activeStatusUser -->
-        <test-method signature="nonactiveStatusUser()[pri:2, instance:com.dikahadir.management.usertest.StatusUserTest@223191a6]" started-at="2025-08-22T04:14:09 WIB" name="nonactiveStatusUser" finished-at="2025-08-22T04:14:14 WIB" duration-ms="4303" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- nonactiveStatusUser -->
-        <test-method signature="activeStatusProject()[pri:3, instance:com.dikahadir.management.usertest.StatusUserTest@223191a6]" started-at="2025-08-22T04:14:14 WIB" name="activeStatusProject" finished-at="2025-08-22T04:14:18 WIB" duration-ms="4422" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- activeStatusProject -->
-        <test-method signature="nonactiveStatusProject()[pri:4, instance:com.dikahadir.management.usertest.StatusUserTest@223191a6]" started-at="2025-08-22T04:14:18 WIB" name="nonactiveStatusProject" finished-at="2025-08-22T04:14:22 WIB" duration-ms="4338" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- nonactiveStatusProject -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dikahadir.management.usertest.StatusUserTest@223191a6]" started-at="2025-08-22T04:14:22 WIB" name="tearDown" finished-at="2025-08-22T04:14:25 WIB" duration-ms="2272" status="PASS">
+        </test-method> <!-- searchName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:12:36 WIB" name="tearDown" finished-at="2025-08-23T19:12:38 WIB" duration-ms="2277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.dikahadir.management.usertest.StatusUserTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:12:38 WIB" name="setUp" finished-at="2025-08-23T19:12:42 WIB" duration-ms="4259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchNik()[pri:2, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:12:42 WIB" name="searchNik" description="Test untuk mencari user dari nik (positif)" finished-at="2025-08-23T19:12:48 WIB" duration-ms="5695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchNik -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:12:48 WIB" name="tearDown" finished-at="2025-08-23T19:12:50 WIB" duration-ms="2186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:12:50 WIB" name="setUp" finished-at="2025-08-23T19:12:55 WIB" duration-ms="4229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchByNameinputNik()[pri:3, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:12:55 WIB" name="searchByNameinputNik" description="Test untuk mencari user dengan input nama dan tetapi field nik (negatif)" finished-at="2025-08-23T19:13:00 WIB" duration-ms="5544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByNameinputNik -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:13:00 WIB" name="tearDown" finished-at="2025-08-23T19:13:02 WIB" duration-ms="2157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:13:02 WIB" name="setUp" finished-at="2025-08-23T19:13:07 WIB" duration-ms="4609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchByNikInputName()[pri:4, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:13:07 WIB" name="searchByNikInputName" description="Test untuk mencari user dengan input nik dan tetapi field nama (negatif)" finished-at="2025-08-23T19:13:12 WIB" duration-ms="5648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByNikInputName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:13:12 WIB" name="tearDown" finished-at="2025-08-23T19:13:15 WIB" duration-ms="2155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:13:15 WIB" name="setUp" finished-at="2025-08-23T19:13:19 WIB" duration-ms="4253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchByFilterUnit()[pri:5, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:13:19 WIB" name="searchByFilterUnit" description="Test untuk mencari user filter by unit (positif)" finished-at="2025-08-23T19:13:31 WIB" duration-ms="12269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByFilterUnit -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:13:31 WIB" name="tearDown" finished-at="2025-08-23T19:13:33 WIB" duration-ms="2159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:13:33 WIB" name="setUp" finished-at="2025-08-23T19:13:38 WIB" duration-ms="4220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchByFilterJobLevel()[pri:6, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:13:38 WIB" name="searchByFilterJobLevel" description="Test untuk mencari user filter by job level(positif)" finished-at="2025-08-23T19:13:50 WIB" duration-ms="12024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByFilterJobLevel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:13:50 WIB" name="tearDown" finished-at="2025-08-23T19:13:52 WIB" duration-ms="2158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:13:52 WIB" name="setUp" finished-at="2025-08-23T19:13:56 WIB" duration-ms="4238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchByFilterTipeKaryawan()[pri:7, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:13:56 WIB" name="searchByFilterTipeKaryawan" description="Test untuk mencari user filter by Type karyawan(positif)" finished-at="2025-08-23T19:14:08 WIB" duration-ms="12047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByFilterTipeKaryawan -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:14:08 WIB" name="tearDown" finished-at="2025-08-23T19:14:10 WIB" duration-ms="2182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:14:10 WIB" name="setUp" finished-at="2025-08-23T19:14:14 WIB" duration-ms="4207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchByFilterPosisiKerja()[pri:8, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:14:14 WIB" name="searchByFilterPosisiKerja" description="Test untuk mencari user filter by Posisi Kerja(positif)" finished-at="2025-08-23T19:14:27 WIB" duration-ms="12134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByFilterPosisiKerja -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:14:27 WIB" name="tearDown" finished-at="2025-08-23T19:14:29 WIB" duration-ms="2190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:14:29 WIB" name="setUp" finished-at="2025-08-23T19:14:33 WIB" duration-ms="4187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchByFilterLokasiKerja()[pri:9, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:14:33 WIB" name="searchByFilterLokasiKerja" description="Test untuk mencari user filter by Lokasi Kerja(positif)" finished-at="2025-08-23T19:14:43 WIB" duration-ms="9629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByFilterLokasiKerja -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:14:43 WIB" name="tearDown" finished-at="2025-08-23T19:14:45 WIB" duration-ms="2177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:14:45 WIB" name="setUp" finished-at="2025-08-23T19:14:49 WIB" duration-ms="4188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchByFilterStatus()[pri:10, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:14:49 WIB" name="searchByFilterStatus" description="Test untuk mencari user filter by Status (positif)" finished-at="2025-08-23T19:15:01 WIB" duration-ms="12048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByFilterStatus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dikahadir.management.usertest.SearchUserTest@16293aa2]" started-at="2025-08-23T19:15:01 WIB" name="tearDown" finished-at="2025-08-23T19:15:03 WIB" duration-ms="2210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.dikahadir.management.usertest.SearchUserTest -->
     </test> <!-- status user -->
   </suite> <!-- Test dikahadir -->
 </testng-results>
