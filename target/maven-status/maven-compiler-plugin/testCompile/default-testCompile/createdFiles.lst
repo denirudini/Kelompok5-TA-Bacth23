@@ -1,8 +1,10 @@
 com\dikahadir\management\pendaftaranuser\RegistrasiUserTest.class
+com\dikahadir\management\usertest\searchuser\SearchUserTest.class
 com\dikahadir\management\BaseTest.class
-com\dikahadir\management\usertest\StatusUserTest.class
 com\dikahadir\management\usertest\ExportUserTest.class
-com\dikahadir\management\usertest\trianglemenu\EditUserTest.class
-com\dikahadir\management\usertest\SearchUserTest.class
-com\dikahadir\management\listenner\ExtentReportListener.class
+com\dikahadir\management\usertest\searchuser\SearchByFilter.class
+com\dikahadir\management\usertest\searchuser\SearchBase.class
 com\dikahadir\management\usertest\trianglemenu\MelihatSisaCutiTest.class
+com\dikahadir\management\usertest\StatusUserTest.class
+com\dikahadir\management\usertest\trianglemenu\EditUserTest.class
+com\dikahadir\management\listenner\ExtentReportListener.class

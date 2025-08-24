@@ -2,7 +2,9 @@ E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahad
 E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\listenner\ExtentReportListener.java
 E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\pendaftaranuser\RegistrasiUserTest.java
 E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\usertest\ExportUserTest.java
-E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\usertest\SearchUserTest.java
+E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\usertest\searchuser\SearchBase.java
+E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\usertest\searchuser\SearchByFilter.java
+E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\usertest\searchuser\SearchUserTest.java
 E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\usertest\StatusUserTest.java
 E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\usertest\trianglemenu\EditUserTest.java
 E:\Practice Selenium\Tugas TA\com.dikahadir.management\src\test\java\com\dikahadir\management\usertest\trianglemenu\MelihatSisaCutiTest.java

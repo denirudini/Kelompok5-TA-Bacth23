@@ -30,7 +30,7 @@ public class UserPage {
     private By formfilterPosisiKerja = By.xpath("//div[@id='mui-component-select-job_position_id']");
     private By formfilterLokasiKerja = By.xpath("//div[@id='mui-component-select-location_point_id']");
     private By formfilterStatus = By.xpath("//div[@id='demo-select-small']");
-    private By choseJoblevel = By.xpath("//li[normalize-space()='Kepala']");
+    private By choseJoblevel = By.xpath("//li[normalize-space()='Leader']");
     private By choseUnit = By.xpath("(//li[normalize-space()='Business Development'])[1]");
     private By choseTipeKaryawan = By.xpath("//li[normalize-space()='Mitra']");
     private By chosePosisiKerja = By.xpath("//li[normalize-space()='BNC Quality Control - Email & Customer Service Ded']");

@@ -8,7 +8,7 @@
         <classes>
             <!-- <class name="com.dikahadir.management.pendaftaranuser.RegistrasiUserTest"/>
             <class name="com.dikahadir.management.usertest.StatusUserTest"/> -->
-            <class name="com.dikahadir.management.usertest.SearchUserTest"/> 
+            <class name="com.dikahadir.management.usertest.searchuser.SearchByFilter"/> 
             <!-- <class name="com.dikahadir.management.usertest.trianglemenu.MelihatSisaCutiTest"/>
             <class name="com.dikahadir.management.usertest.trianglemenu.EditUserTest"/> -->
         </classes>        
